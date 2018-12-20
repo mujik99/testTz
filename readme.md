@@ -37,7 +37,9 @@ open laravel-echo-server.json file in root folder and change
 npm install --save laravel-echo<br>
 npm install --save socket.io-client<br>
 
-start console with project<br>
+After all settings open npm console and write 'laravel-echo-server start'
+
+open new console with project<br>
 enter php artisan queue:listen --tries=1
 
 enter url http://localhost.site/
