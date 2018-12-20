@@ -26,6 +26,9 @@ make sure that you have:<br>
   Laravel 5.3+ <br>
 <br>
 
+install predis library<br>
+composer require predis/predis
+
 start npm console , go to project folder 
 enter 'npm install -g laravel-echo-server'
 enter 'laravel-echo-server init'
