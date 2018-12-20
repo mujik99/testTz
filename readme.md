@@ -32,7 +32,6 @@ enter 'npm install -g laravel-echo-server'
 enter 'laravel-echo-server init'
 
 After this command in the root of your project should create a file laravel-echo-server.json
-open laravel-echo-server.json file in root folder and change 
 
 npm install --save laravel-echo<br>
 npm install --save socket.io-client<br>
