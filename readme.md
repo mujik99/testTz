@@ -13,7 +13,6 @@ QUEUE_DRIVER=redis<br>
 REDIS_HOST=127.0.0.1<br>
 REDIS_PASSWORD=null<br>
 REDIS_PORT=6379<br>
-<br>
 
 set in this files your db password and db name
 
@@ -33,6 +32,8 @@ enter 'laravel-echo-server init'
 
 After this command in the root of your project should create a file laravel-echo-server.json
 
+Install Laravel Echo and Socket.IO clients
+
 npm install --save laravel-echo<br>
 npm install --save socket.io-client<br>
 
@@ -42,4 +43,3 @@ open new console with project<br>
 enter php artisan queue:listen --tries=1
 
 enter url http://localhost.site/
-
