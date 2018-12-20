@@ -19,7 +19,7 @@ set in this files your db password and db name
 
 start console go to project folder, enter php artisan migrate
 
-<h3>socket io<h3>
+<h3>socket io</h3>
 
 make sure that you have:<br>
   Node 6.0+<br>
