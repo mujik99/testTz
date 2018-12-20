@@ -12,12 +12,20 @@ html, body {
     padding: 30px;
 }
 
+.posts {
+    width: 600px;
+    float: left;
+}
+.post-create {
+    width: calc(100% - 650px);
+    float: left;
+    padding-left: 50px;
+}
 .post {
     padding: 10px;
     border: 1px solid #0f6db4;
     border-radius: 4px;
     margin-top: 10px;
-    max-width: 600px;
 }
 
 .post_author {
@@ -26,6 +34,13 @@ html, body {
 
 .post_date {
     float: right;
+}
+
+.post-create .btn-create {
+    margin-top: 10px;
+}
+.post-create label {
+    margin-top: 10px;
 }
 .clear{
     clear: both;

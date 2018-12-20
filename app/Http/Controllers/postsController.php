@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\models\postModel;
-use Illuminate\Support\Facades\URL;
+//use Illuminate\Support\Facades\URL;
 
 class postsController extends Controller
 {
@@ -21,10 +21,21 @@ class postsController extends Controller
         return view('posts',compact('posts'));
     }
 
-    public function getNewPosts()
+//    public function getNewPosts()
+//    {
+//        $posts = $this->postsModel->getLastPosts();
+//        $pathToAsset = URL::asset('img/');
+//        return response()->json(['posts' => $posts, 'pathToAsset' => $pathToAsset]);
+//    }
+
+    public function createNewPost(Request $request)
     {
-        $posts = $this->postsModel->getLastPosts();
-        $pathToAsset = URL::asset('img/');
-        return response()->json(['posts' => $posts, 'pathToAsset' => $pathToAsset]);
+        $this->postsModel->post_title = $request['title'];
+        $this->postsModel->description = $request['description'];
+        $this->postsModel->author_name = $request['author'];
+        $this->postsModel->img_path = '';
+        $this->postsModel->save();
+
+        broadcast(new \App\Events\GetNewPostsEvent);
     }
 }

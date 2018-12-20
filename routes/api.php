@@ -14,3 +14,4 @@ use Illuminate\Http\Request;
 */
 
 Route::post('/getNewPosts', 'postsController@getNewPosts');
+Route::post('/createPost', 'postsController@createNewPost');

@@ -16,8 +16,7 @@
 
     <!-- Scripts -->
     <script src="{{ URL::asset('public/js/app.js') }}"></script>
-    <script src="{{ URL::asset('public/js/functions.js') }}"></script>
-
+    <script src="{{ URL::asset('public/js/main.js') }}"></script>
 
 </head>
 <body>
